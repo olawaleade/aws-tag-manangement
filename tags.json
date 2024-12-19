@@ -1,0 +1,11 @@
+{
+  "442042528028": {
+    "SERVICE_NAME": "Home Life PDM Group",
+    "SERVICE_ID": "003019",
+    "BILLCODETYPE": "BEKEY",
+    "L2": "ORG002926",
+    "BILLCODE": "1010092627",
+    "COMPANY_SEGMENT": "c-and-m",
+    "ENVIRONMENT": "staging"
+  }
+}
