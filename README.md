@@ -45,13 +45,20 @@ A repository for managing policies of each Public Cloud with code
   
   - Run this command
     ```
-     python3 tag_account.py 
+     python3 tag_account.py arg1
+     for example python3 tag_account.py tag.json
+
     ```
 
 2. To Untag existing resource
   
   - Run this command
     ```
-     python3 untag_account.py
+     python3 untag_account.py arg2
+     for example python3 untag_account.py untag.json
     ```
--  Note that the tag.json are the tags to be added and untag.json are the Keys for the tage tok be deleted.
+
+## Points to Note
+- The Config.ini file consist of the Tag Keys, which are validated against the tag inputs
+- Note that the arg1 and arg2 are the tags json file defined which is given as input which running the command.
+- 
