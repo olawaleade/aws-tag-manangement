@@ -1,16 +1,15 @@
-import json
 import boto3
+from configparser import ConfigParser
 from botocore.exceptions import BotoCoreError, ClientError
 
 # Load the configuration file
+config = ConfigParser()
 try:
-    with open('tags.json', 'r') as f:
-        tags = json.load(f)
+    config.read('tag_config.ini')
+    if not config.sections():
+        raise FileNotFoundError("The configuration file 'tag_config.ini' is empty or not properly formatted.")
 except FileNotFoundError:
-    print("Error: The configuration file 'tags.json' was not found.")
-    exit(1)
-except json.JSONDecodeError:
-    print("Error: The configuration file 'tags.json' is not a valid JSON.")
+    print("Error: The configuration file 'tag_config.ini' was not found or is empty.")
     exit(1)
 
 # Initialize a session using Amazon Organizations
@@ -29,5 +28,7 @@ def tag_account(account_id, tags):
         print(f"Error tagging account {account_id}: {error}")
 
 # Iterate over each account in the configuration file and apply tags
-for account_id, tags in tags.items():
+for account_id in config.sections():
+    # Get the tags for the current account
+    tags = dict(config.items(account_id))
     tag_account(account_id, tags)

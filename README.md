@@ -1,5 +1,5 @@
-# CCoE Tag Management
-A repository for managing AWS Tag Management for Member Accounts in Public Cloud with code
+# CCoE
+A repository for managing policies of each Public Cloud with code
 
 ## AWS
 
