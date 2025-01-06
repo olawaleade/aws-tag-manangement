@@ -1,21 +1,19 @@
 {
   "012345678912": {
-    "SERVICE_NAME": "Home Life PDM Group",
-    "SERVICE_ID": "003019",
-    "BILLCODETYPE": "BEKEY",
-    "L2": "ORG002926",
-    "BILLCODE": "1010092627",
-    "COMPANY_SEGMENT": "c-and-m",
+    "SERVICE_NAME": "Name of service",
+    "SERVICE_ID": "0001",
+    "CODE": "KEY",
+    "BILLING": "101002",
+    "COMPANY": "fintech",
     "ENVIRONMENT": "staging"
   },
 
     "123456789011": {
-    "SERVICE_NAME": "Home Life PDM Group",
-    "SERVICE_ID": "003567",
-    "BILLCODETYPE": "BEKEY",
-    "L2": "ORG005789",
-    "BILLCODE": "1010092627",
-    "COMPANY_SEGMENT": "hq",
+    "SERVICE_NAME": "Name of service",
+    "SERVICE_ID": "0002",
+    "CODE": "KEY",
+    "BILLING": "101004",
+    "COMPANY": "sales",
     "ENVIRONMENT": "production"
   }
 }
