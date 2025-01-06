@@ -1,5 +1,5 @@
-# CCoE
-A repository for managing policies of each Public Cloud with code
+# Tag Management
+A repository for managing tags in aws orgnaization member account with code
 
 ## AWS
 
@@ -11,7 +11,7 @@ A repository for managing policies of each Public Cloud with code
 
 - To add or update tags to an existing resource
   ```
-   aws organizations tag-resource --resource-id <account_id> --tags Key=SERVICE_NAME,Value="abc" Key=SERVICE_ID,Value="123345" Key=BILLCODETYPE,Value="BEKEY" Key=L2,Value="org1234" Key=BILLCODE,Value="12334455" Key=COMPANY_SEGMENT,Value="hq" Key=ENVIRONMENT,Value="production"
+   aws organizations tag-resource --resource-id <account_id> --tags Key=SERVICE_NAME,Value="abc" Key=SERVICE_ID,Value="123345" Key=CODE,Value="KEY" Key=BILLING,Value="12334455" Key=COMPANY,Value="fintech" Key=ENVIRONMENT,Value="production"
 
   ```
   
