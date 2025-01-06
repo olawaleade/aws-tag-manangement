@@ -1,0 +1,20 @@
+{
+  "012345678912": [
+    "SERVICE_NAME",
+    "SERVICE_ID",
+    "BILLCODETYPE",
+    "L2",
+    "BILLCODE",
+    "COMPANY_SEGMENT",
+    "ENVIRONMENT"
+  ],
+  "123456789011": [
+    "SERVICE_NAME",
+    "SERVICE_ID",
+    "BILLCODETYPE",
+    "L2",
+    "BILLCODE",
+    "COMPANY_SEGMENT",
+    "ENVIRONMENT"
+  ]
+}
